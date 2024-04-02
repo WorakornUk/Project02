@@ -93,6 +93,18 @@ main .sidelistL a{
     text-decoration: none;
     font-weight: bold;
 }
+main a.qwerty::before {
+    content: "";
+    background-image: url(./icons/gaming.png);
+    background-size: 100% 100%;
+    height: 25px;
+    width:25px;
+    margin-right: 20px;
+}
+main a.qwerty::after {
+    content: "^";
+    margin-left: auto;
+}
 
 main .sidelistL img{
     width: 30px;
@@ -195,12 +207,14 @@ main .frame>img{
 
 .content{
     width: 80%;
+    min-height: 300px;
     margin-top: 30px;
     background: white;
     border-radius: 8px;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.071);
     display: flex;
     flex-flow: column;
+    padding-bottom: 10px;
 }
 .infocontent{
     flex-flow: row;
@@ -240,7 +254,6 @@ main .frame>img{
 }
 .picpost{
     width: 100%;
-    height: 300px;
 }
 .picpost img{
     width: 100%;
